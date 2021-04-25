@@ -28,10 +28,10 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <NextSeo title={t("common:homepage")} />
 
       <HomeHero />
-      <Testimonials />
       <NextGenAPIGateway />
       <OSS />
       <Resources />
+      <Testimonials />
       <HomeCTA />
     </>
   );
