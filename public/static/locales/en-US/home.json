@@ -43,5 +43,8 @@
   "home-text28": "",
   "home-text29": "Request Demo",
   "home-text30": "Talk with API Expert",
-  "home-text31": "Flexible and reliable Enterprise API gateways will serve as your traffic management platform, reducing generic component development and securing your business stability."
+  "home-text32": "Flexible and reliable Enterprise API gateways will serve as your traffic management platform, reducing generic component development and securing your business stability.",
+  "home-text33": "Apache APISIX's dynamic capabilities reduce the number of requests that fail when Nginx reloads the configuration. In addition, it has high performance, high reliability, and provides a rich set of plugins to serve the business, making it a great choice for gateway selection.",
+  "home-text34": "We investigated many API gateways and finally chose Apache APISIX as the core component of the next generation gateway due to its high performance, high scalability, and active community. We hope it will have a more profound impact on the microservices space.",
+  "home-text35": "With the massive popularity of microservices and the rapid growth in application size, number of nodes and dependencies, an efficient and easy-to-use API gateway is necessary. The Tencent IEG team has been involved in the early stages of Apache APISIX, working together to drive the community forward."
 }

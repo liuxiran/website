@@ -1,8 +1,6 @@
 import { Box, Button, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
-import React, { useContext } from "react";
-import { NextSeo } from "next-seo";
+import React from "react";
 import { TFunction } from "next-i18next";
-import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 import { withTranslation } from 'i18n';
 
