@@ -18,7 +18,7 @@ type Props = {
 
 const App: NextPage<Props, any> = ({ t }) => {
   return (
-    <Box as="section" bg={mode('gray.100', 'gray.800')} pb="20">
+    <Box as="section" bg={mode('gray.100', 'gray.800')}>
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Stack spacing={{ base: '4', lg: '20' }} direction={{ base: 'column-reverse', lg: 'row' }}>
           <Center flex="1" minH={[0, 420]} maxW={{ lg: 'xl' }}>

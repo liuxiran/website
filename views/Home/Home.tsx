@@ -6,7 +6,6 @@ import { NextPage } from "next";
 
 import Testimonials from '@/components/Testimonials'
 
-import { default as LowCodeAPIGateway } from './components/HomeFeature2'
 import { default as NextGenAPIGateway } from './components/HomeFeature3'
 import { default as Resources } from './components/HomeFeature4'
 import { default as OSS } from './components/HomeFeature5'
@@ -29,11 +28,10 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <NextSeo title={t("common:homepage")} />
 
       <HomeHero />
-      <LowCodeAPIGateway />
+      <Testimonials />
       <NextGenAPIGateway />
       <OSS />
       <Resources />
-      <Testimonials />
       <HomeCTA />
     </>
   );

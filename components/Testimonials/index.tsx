@@ -42,7 +42,7 @@ const Testimonials: NextPage<Props, any> = ({ t }) => {
       }
       pageRef.current = nextPage
       setPage(pageRef.current)
-    }, 3000)
+    }, 5000)
   }, [])
 
   const item = list[pageRef.current - 1]
