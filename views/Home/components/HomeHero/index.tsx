@@ -71,8 +71,8 @@ const App: NextPage<Props, any> = ({ t }) => {
                 "https://api7-website-1301662268.file.myqcloud.com/20210330/gray/haoweilai-2.png"
               ].map(item => (
                 <>
-                  <Image src={item} key={item} display={{ base: 'flex', lg: 'none' }} />
-                  <Image src={item} key={item} maxW="200" display={{ base: 'none', lg: 'flex' }} />
+                  <Image src={item} key={`pc-${item}`} display={{ base: 'flex', lg: 'none' }} />
+                  <Image src={item} key={`phone-${item}`} maxW="200" display={{ base: 'none', lg: 'flex' }} />
                 </>
               ))
             }
