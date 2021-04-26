@@ -45,14 +45,6 @@ const Testimonials: NextPage<Props, any> = ({ t }) => {
     }, 5000)
   }, [])
 
-  const item = list[pageRef.current - 1]
-
-  if (!item) {
-    return null
-  }
-
-  const { description, logo } = item
-
   return (
     <Box as="section">
       <Box maxW="3xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
@@ -61,13 +53,19 @@ const Testimonials: NextPage<Props, any> = ({ t }) => {
             color={useColorModeValue('gray.300', 'gray.600')}
             fontSize={{ base: '3xl', md: '6xl' }}
           />
-          <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6">
-            {description}
-          </Text>
-          <Quotee
-            imageSrc={logo}
-            mt="8"
-          />
+          {list.map((item, index) => {
+            return (
+              <Box key={item.logo} hidden={index !== page - 1}>
+                <Text fontSize={{ base: 'xl', md: '2xl' }} fontWeight="medium" mt="6">
+                  {item.description}
+                </Text>
+                <Quotee
+                  imageSrc={item.logo}
+                  mt="8"
+                />
+              </Box>
+            )
+          })}
         </Flex>
         <HStack justify="center" spacing="4" mt="8" color={useColorModeValue('gray.300', 'gray.600')}>
           {list.map((_, index) => (
