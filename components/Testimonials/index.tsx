@@ -4,8 +4,6 @@ import { TFunction } from "next-i18next";
 import { NextPage } from "next";
 import { withTranslation } from 'i18n';
 
-import { QuoteIcon } from './QuoteIcon'
-
 type Props = {
   t: TFunction;
 };
@@ -53,19 +51,14 @@ const Testimonials: NextPage<Props, any> = ({ t }) => {
   }, [])
 
   return (
-    <Box as="section">
-      <Box maxW="4xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
+    <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')} pb="12">
+      <Box maxW="4xl" mx="auto" px={{ base: '6', md: '8' }}>
         <Flex direction="column" align="center" textAlign="center">
-          <QuoteIcon
-            color={useColorModeValue('gray.300', 'gray.600')}
-            fontSize={{ base: '3xl', md: '4xl' }}
-            mb="5"
-          />
           {list.map((item, index) => {
             return (
               <Box key={item.logo} hidden={index !== page - 1} display={{ base: '', lg: 'flex' }} alignItems="center">
                 <Box mr={{ base: '0', lg: '5' }} mb={{ base: '5', lg: '0' }}>
-                  <Img src={item.logo} mx="auto"  maxW={48} />
+                  <Img src={item.logo} mx="auto" maxW={48} />
                 </Box>
                 <Box>
                   <Text fontWeight="extrabold" textAlign="left" mb="3">

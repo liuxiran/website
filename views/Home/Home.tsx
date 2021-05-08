@@ -5,8 +5,8 @@ import { I18nContext } from "react-i18next";
 import { NextPage } from "next";
 
 import Testimonials from '@/components/Testimonials'
+import LogoWall from '@/components/LogoWall';
 
-import { default as NextGenAPIGateway } from './components/HomeFeature3'
 import { default as Resources } from './components/HomeFeature4'
 import { default as OSS } from './components/HomeFeature5'
 import HomeHero from './components/HomeHero'
@@ -28,10 +28,11 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <NextSeo title={t("common:homepage")} />
 
       <HomeHero />
-      <NextGenAPIGateway />
+      {/* <HomeFeatures /> */}
+      <Testimonials />
       <OSS />
       <Resources />
-      <Testimonials />
+      <LogoWall />
       <HomeCTA />
     </>
   );

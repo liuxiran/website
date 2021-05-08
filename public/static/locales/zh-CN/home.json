@@ -1,11 +1,11 @@
 {
   "home-block1-title": "驱动企业数字化转型",
-  "home-block1-desc": "管理并可视化 API 和微服务等企业关键业务流量，通过大数据和人工智能（AI）加速企业业务决策",
+  "home-block1-desc": "管理并可视化 API 和微服务等企业关键业务流量，通过大数据和人工智能（AI）加速企业业务决策。",
   "home-block3-title": "为全球领先企业所信任",
   "home-block4-title": "想知道 API7 能为您做些什么吗？",
   "home-block4-button": "预约演示",
   "home-block5-title": "下一代云原生 API 管理平台",
-  "home-block5-desc": "支持混合云、多数据中心、Kubernetes 等部署方式，帮助您快速、安全地处理业务数据，并进行动态扩展。",
+  "home-block5-desc": "下一代云原生 API 管理平台，支持混合云、多数据中心、Kubernetes 等部署方式，帮助您快速、安全地处理业务数据，并进行动态扩展。",
   "home-block5-feature1-title": "极致性能",
   "home-block5-feature1-desc": "微秒级延时，单核心 2 万 QPS，性能超出同类产品 10 倍",
   "home-block5-feature1-button": "性能对比测试",
@@ -49,5 +49,6 @@
   "home-text39": "李样兵",
   "home-text40": "美菜网基础服务平台负责人",
   "home-text41": "厉辉",
-  "home-text42": "腾讯云后台工程师"
+  "home-text42": "腾讯云后台工程师",
+  "home-text43": "受全球领先企业所信任"
 }

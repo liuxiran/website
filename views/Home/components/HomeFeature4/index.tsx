@@ -12,7 +12,7 @@ type Props = {
   t: TFunction;
 };
 
-const App: NextPage<Props, any> = ({ t }) => {
+const Resources: NextPage<Props, any> = ({ t }) => {
   const {
     i18n: { language },
   } = useContext(I18nContext);
@@ -20,7 +20,7 @@ const App: NextPage<Props, any> = ({ t }) => {
   const data = language === "zh-CN" ? ZH_CN_data : EN_US_data
 
   return (
-    <Box bg={mode('gray.50', 'inherit')} as="section" py="24">
+    <Box bg={mode('gray.50', 'inherit')} as="section" py="12">
       <Box maxW={{ base: 'xl', md: '2xl', lg: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Box textAlign="center" maxW="md" mx="auto">
           <Heading size="2xl" fontWeight="extrabold" letterSpacing="tight">
@@ -38,8 +38,8 @@ const App: NextPage<Props, any> = ({ t }) => {
   )
 }
 
-App.getInitialProps = async () => ({
+Resources.getInitialProps = async () => ({
   namespacesRequired: ["common", "home"],
 });
 
-export default withTranslation("home")(App)
+export default withTranslation("home")(Resources)
