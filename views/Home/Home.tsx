@@ -13,6 +13,7 @@ import HomeHero from './components/HomeHero'
 import { withTranslation } from "../../i18n";
 import HomeCTA from "@/views/Home/components/HomeCTA";
 import HomeCertificates from "./components/HomeCertificates";
+import HomeTestimonials from "./components/HomeTestimonials";
 
 type Props = {
   t: TFunction;
@@ -32,6 +33,7 @@ const Home: NextPage<Props, any> = ({ t }) => {
       <HomeFeature3 />
       <HomeFeature5 />
       <HomeCertificates />
+      <HomeTestimonials />
       <HomeFeature4 />
       <HomeCTA />
     </>
