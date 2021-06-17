@@ -18,32 +18,28 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
   // testimonials data
   const list = [
   {
-    description1: t("home-testimonials-airwallex-desc1"),
-    description2: t("home-testimonials-airwallex-desc2"),
+    description: t("home-testimonials-airwallex-desc"),
     logo: '/static/images/airwallex.png',
     name: t("home-testimonials-airwallex-name"),
     job: t("home-testimonials-airwallex-job"),
     label: t("home-testimonials-airwallex-label")
   },
   {
-    description1: t("home-testimonials-tencent-ieg-desc1"),
-    description2: t("home-testimonials-tencent-ieg-desc2"),
+    description: t("home-testimonials-tencent-ieg-desc"),
     logo: '/static/images/tencent-ieg.png',
     name: t("home-testimonials-tencent-ieg-name"),
     job: '',
     label: t("home-testimonials-tencent-ieg-label")
   },
   {
-    description1: t("home-testimonials-meicai-desc1"),
-    description2: t("home-testimonials-meicai-desc2"),
+    description: t("home-testimonials-meicai-desc"),
     logo: '/static/images/meicai.png',
     name: t("home-testimonials-meicai-name"),
     job: t("home-testimonials-meicai-job"),
     label: t("home-testimonials-meicai-label")
   },
   {
-    description1: t("home-testimonials-tencent-cloud-desc1"),
-    description2: t("home-testimonials-tencent-cloud-desc2"),
+    description: t("home-testimonials-tencent-cloud-desc"),
     logo: '/static/images/tencent-cloud.png',
     name: t("home-testimonials-tencent-cloud-name"),
     job: t("home-testimonials-tencent-cloud-job"),
@@ -62,9 +58,6 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      renderBullet: (index, className) => {
-        return `<span class="${className}" style="height: 3px; width: auto; border-radius:0; font-size:1.2rem">${list[index].label}</span>`;
-      }
     }
   }
 
@@ -88,13 +81,12 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
                       <Text color="gray.500" mt="2" minH="1.5rem">{item.job}</Text>
                     </Box>
                     <Spacer />
-                    <Box maxW="36">
+                    <Flex maxW="36" alignItems="center">
                       <img src={item.logo} ></img>
-                    </Box>
+                    </Flex>
                   </Flex>
                   <QuoteIcon color="blue.500"/>
-                  <Text>{item.description1}</Text>
-                  <Text>{item.description2}</Text>
+                  <Text>{item.description}</Text>
                 </Box>
               </Box>
               )
