@@ -59,7 +59,7 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet: (index, className) => {
-        return `<span class="${className}" style="height: 3px; width: auto; border-radius:0">${list[index].label}</span>`;
+        return `<span class="${className}" style="height: 3px; width: auto; border-radius:0; font-size:1.2rem">${list[index].label}</span>`;
       }
     }
   }
@@ -76,7 +76,7 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
           list.map((item, index) => {
           return (
             <Box>
-              <Box maxW="4xl" mx="auto" px={{ base: '6', md: '8' }} py={{ base: '12', md: '8' }}>
+              <Box maxW="4xl" mx="auto" pb={{ base: '12', md: '8' }}>
                 <Flex pb={{ base: '12', md: '8' }} wrap="wrap">
                   <Box>
                     <Text fontSize="2xl" fontWeight="bold">{item.name}</Text>
