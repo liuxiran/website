@@ -52,12 +52,15 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 10000,
+      delay: 6000,
       disableOnInteraction: false
     },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      renderBullet: (index, className) => {
+        return `<span class="${className}" style="height: 0.65rem; width: 0.65rem;"></span>`;
+      }
     }
   }
 
