@@ -78,12 +78,11 @@ const HomeTestimonials: NextPage<Props, any> = ({ t }) => {
             return (
               <Box>
                 <Box maxW="4xl" mx="auto" px={{ base: '6', md: '8' }} py={{ base: '12', md: '8' }}>
-                  <Flex pb={{ base: '12', md: '8' }} wrap="wrap">
-                    <Box>
+                  <Flex pb={{ base: '12', md: '8' }} wrap="wrap" justifyContent="space-between">
+                    <Box minW="150">
                       <Text fontSize="2xl" fontWeight="bold">{item.name}</Text>
                       <Text color="gray.500" mt="2" minH="1.5rem">{item.job}</Text>
                     </Box>
-                    <Spacer />
                     <Flex maxW="36" alignItems="center">
                       <img src={item.logo} ></img>
                     </Flex>
