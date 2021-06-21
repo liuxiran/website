@@ -106,6 +106,15 @@ const App: NextPage<Props, any> = ({ t }) => {
             </HStack>
           </Stack>
           <Box>
+          {
+              language === 'zh-CN' && (
+                <Text mt="2">
+                  <Box as="a" href="/privacy_policy">隐私政策</Box>
+                </Text>
+              )
+            }
+          </Box>
+          <Box>
             {
               language === 'zh-CN' ? (
                 <Text>版权所有 &copy; {new Date().getFullYear()} 深圳支流科技有限公司 保留一切权利</Text>
