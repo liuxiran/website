@@ -105,7 +105,24 @@ const App: NextPage<Props, any> = ({ t }) => {
               ))}
             </HStack>
           </Stack>
-          <Box>
+          <Stack
+              direction={{ base: 'column', md: 'row' }}
+              spacing={{ base: '4', md: '12' }}
+              justify={{ base: 'space-between', lg: 'flex-end' }}>
+            {
+              language === 'zh-CN' && (
+                <Text>
+                  <Box as="a" href="/privacy_policy">隐私政策</Box>
+                </Text>
+              )
+            }
+            {
+              language === 'zh-CN' && (
+                <Text>
+                  <Box as="a" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19060840号</Box>
+                </Text>
+              )
+            }
             {
               language === 'zh-CN' ? (
                 <Text>版权所有 &copy; {new Date().getFullYear()} 深圳支流科技有限公司 保留一切权利</Text>
@@ -113,14 +130,7 @@ const App: NextPage<Props, any> = ({ t }) => {
                 <Text>Copyright &copy;Shenzhen Zhiliu Technology Co.,Ltd {new Date().getFullYear()}. All rights reserved.</Text>
               )
             }
-            {
-              language === 'zh-CN' && (
-                <Text mt="2">
-                  <Box as="a" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19060840号</Box>
-                </Text>
-              )
-            }
-          </Box>
+            </Stack>
         </Flex>
       </Box>
     </Box>
